@@ -1,0 +1,8 @@
+<div>
+  <h1>Check if your account is compromised</h1>
+  <input type="email" [(ngModel)]="email" placeholder="Enter your email">
+  <button (click)="checkAccount()">Check Account</button>
+
+  <div *ngIf="result">{{ result }}</div>
+  <div *ngIf="error" class="error">{{ error }}</div>
+</div>
